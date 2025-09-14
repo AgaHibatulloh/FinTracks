@@ -1,22 +1,13 @@
-# ignore all
-*
 
-# allow only these
-!.gitignore
-!requirements.txt
-!README.md
-!src/
-!tests/
-!fastapi/
-!uvicorn[standard]/
-!sqlalchemy/
-!psycopg2-binary/
-!pandas/
-!python-dotenv/
-!openai/
-
-# BUT: even inside whitelisted dirs, ignore junk
+# Ignore Python cache and compiled files
 src/__pycache__/
 src/*.pyc
 tests/__pycache__/
 tests/*.pyc
+
+
+# ignore macOS system files
+._*
+
+# Optional: ignore environment files
+.env
